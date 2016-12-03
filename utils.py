@@ -52,7 +52,7 @@ def build_speech_with_repromt_response(speech_output, should_end_session, reprom
         },
         'reprompt': {
             'outputSpeech': {
-                'type': 'PlainText',
+                'type': 'SSML',
                 'text': repromt_text
             }
         },
