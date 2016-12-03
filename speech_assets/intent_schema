@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "firstBundesliga"
+    },
+    {
+      "intent": "secondBundesliga"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}
