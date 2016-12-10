@@ -7,6 +7,24 @@
       "intent": "secondBundesliga"
     },
     {
+      "intent": "currentWeather"
+    },
+    {
+      "intent": "currentSolar"
+    },
+    {
+      "intent": "currentTime"
+    },
+    {
+      "intent": "soccerMatchesFirst"
+    },
+    {
+      "intent": "soccerMatchesSecond"
+    },
+    {
+      "intent": "picOfTheDay"
+    },
+    {
       "intent": "AMAZON.HelpIntent"
     }
   ]
