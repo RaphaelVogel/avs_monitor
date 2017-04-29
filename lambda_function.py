@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import requests
 import utils
@@ -96,20 +95,7 @@ def on_intent(intent_request, session_attributes):
 # Functions that control the skill's intent
 # ----------------------------------------------------------------------------------
 def get_welcome_response(session_attributes):
-    # If the user either does not reply to the welcome message or says something
-    # that is not understood, they will be prompted again with this text.
-    speech_output = "<speak>Wilkommen, du kannst Infromationen auf dem Monitor im Wohnzimmer anzeigen lassen. " \
-                    "Folgende Dinge sind möglich: " \
-                    "Die Tabelle, oder die aktuellen Spiele, der ersten und zweiten Bundesliga anzeigen lassen. " \
-                    "Die aktuelle Temperatur und Luftdruck anzeigen lassen. " \
-                    "Werte der Solaranlage anzeigen lassen. " \
-                    "Die Uhr anzeigen lassen. " \
-                    "Das Bild des Tages zeigen.</speak>"
-
-    should_end_session = False
-
-    return utils.build_response(session_attributes,
-        utils.build_speech_response(speech_output, should_end_session))
+    return utils.build_response({}, utils.build_speech_response(random.choice(utils.response_comments), False))
 
 
 # user wants to cancel or stop skill
